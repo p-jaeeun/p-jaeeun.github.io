@@ -6,20 +6,10 @@ class Header extends Component {
   render() {
     return (
       <HeaderWrapper>
-        <Logo>p.jaeeun</Logo>
-        <Nav>
-          <NavUl>
-            <NavList>
-              <StyledLink to="/">Home</StyledLink>
-            </NavList>
-            <NavList>
-              <StyledLink to="/about">About</StyledLink>
-            </NavList>
-            <NavList>
-              <StyledLink to="/projects">Projects</StyledLink>
-            </NavList>
-          </NavUl>
-        </Nav>
+        <Element>
+          <Logo>p.jaeeun</Logo>
+          <Navigation />
+        </Element>
       </HeaderWrapper>
     );
   }
@@ -27,11 +17,36 @@ class Header extends Component {
 
 export default Header;
 
+class Navigation extends Component {
+  render() {
+    return (
+      <Nav>
+        <NavList>
+          <StyledLink to="/">Home</StyledLink>
+        </NavList>
+        <NavList>
+          <StyledLink to="/about">About</StyledLink>
+        </NavList>
+        <NavList>
+          <StyledLink to="/projects">Projects</StyledLink>
+        </NavList>
+      </Nav>
+    );
+  }
+}
+
 // header
 
 const HeaderWrapper = styled.header`
   width: 100%;
   height: 50px;
+`;
+
+const Element = styled.div`
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
 `;
 
 const Logo = styled.div`
@@ -46,7 +61,7 @@ const Logo = styled.div`
 
 // navigation
 
-const Nav = styled.nav`
+const Nav = styled.ul`
   width: 300px;
   height: 50px;
   display: flex;
@@ -54,20 +69,19 @@ const Nav = styled.nav`
   list-style: none;
 `;
 
-const NavUl = styled.ul``;
-
-const NavList = styled.li`
-  &:hover {
-    color: #fff;
-  }
-`;
+const NavList = styled.li``;
 
 const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
-  margin-left: 10px;
+  margin: 15px;
   hegiht: 50px;
   font-size: 1.2rem;
   font-weight: 400;
   color: rgb(101, 101, 101);
+  &:hover {
+    background-color: #000;
+    background-size: 100px;
+    color: #fff;
+  }
 `;
