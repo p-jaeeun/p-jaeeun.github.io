@@ -32,12 +32,13 @@ export default Header;
 const HeaderWrapper = styled.header`
   width: 100%;
   height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 const Logo = styled.div`
-  width: 100px;
   height: 50px;
-  margin: 15px 0 0 20px;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 500;
@@ -47,10 +48,8 @@ const Logo = styled.div`
 // navigation
 
 const Nav = styled.nav`
-  width: 300px;
-  height: 50px;
   display: flex;
-  margin-left: 65%;
+  flex-direction: row;
   list-style: none;
 `;
 
@@ -65,8 +64,6 @@ const NavList = styled.li`
 const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
-  margin-left: 10px;
-  hegiht: 50px;
   font-size: 1.2rem;
   font-weight: 400;
   color: rgb(101, 101, 101);
