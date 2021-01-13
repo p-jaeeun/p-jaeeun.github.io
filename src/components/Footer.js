@@ -20,7 +20,7 @@ const FooterWrapper = styled.footer`
 const FooterList = styled.ul`
   width: 100%;
   margin: 0 auto;
-  diplay: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
 `;

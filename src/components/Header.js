@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
       <HeaderWrapper>
-        <Logo>p.jaeeun</Logo>
+        <LogoLink to="/">p.jaeeun</LogoLink>
         <Nav>
           <NavUl>
             <NavList>
@@ -37,8 +37,9 @@ const HeaderWrapper = styled.header`
   justify-content: space-between;
 `;
 
-const Logo = styled.div`
-  height: 50px;
+const LogoLink = styled(Link)`
+  padding: 15px 0 0 100px;
+  align-items: center;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 500;
@@ -48,23 +49,26 @@ const Logo = styled.div`
 // navigation
 
 const Nav = styled.nav`
-  display: flex;
-  flex-direction: row;
   list-style: none;
+  padding-right: 200px;
 `;
 
-const NavUl = styled.ul``;
+const NavUl = styled.ul`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
 
 const NavList = styled.li`
-  &:hover {
-    color: #fff;
-  }
+  padding-left: 50px;
 `;
 
 const StyledLink = styled(Link)`
-  display: inline-block;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 400;
   color: rgb(101, 101, 101);
+  &:hover {
+    color: rgb(255, 200, 0);
+  }
 `;
