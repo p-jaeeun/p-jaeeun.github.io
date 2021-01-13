@@ -68,8 +68,6 @@ class About extends Component {
                     <SkillDesc>node를 이용한 SSR환경 개발 경험</SkillDesc>
                   </FrontList>
                 </ul>
-              </SkillItem>
-              <SkillItem>
                 <h3>Devops</h3>
                 <ul>
                   <FrontList>

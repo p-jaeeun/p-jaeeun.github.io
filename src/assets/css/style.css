@@ -9,16 +9,19 @@ body {
   height: 100%;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  margin: auto;
+header,
+footer {
   user-select: none;
   -webkit-user-select: none;
   -webkit-user-drag: none;
   -ms-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
 #root {
