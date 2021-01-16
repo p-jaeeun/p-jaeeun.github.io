@@ -49,18 +49,6 @@ header {
   left: 0;
 }
 
-.home__container {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  position: relative;
-  padding-top: 50px;
-  z-index: -10;
-  margin: 0 0 -40px 0;
-  text-align: center;
-  /* header & footer height */
-}
-
 .container {
   width: 100%;
   height: 100%;
@@ -99,6 +87,7 @@ footer {
   font-size: 0.9rem;
   margin: 10px;
 }
+
 /* Home */
 .home__container {
   width: 100%;
@@ -118,10 +107,10 @@ footer {
 
 /* About page */
 .about_title {
-  margin-top: 100px;
+  padding-top: 20px;
 }
 .profile {
-  width: 250px;
+  width: 200px;
   border-radius: 50%;
 }
 
@@ -130,6 +119,9 @@ footer {
 }
 
 /* Projects page */
+.project__wrapper {
+  padding-top: 10%;
+}
 .project__list {
   display: flex;
   flex-direction: row;
@@ -137,6 +129,11 @@ footer {
 }
 
 .project__img {
-  width: 700px;
+  width: 450px;
   height: auto;
+  border-radius: 10px;
+}
+.project__img:hover {
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.1s;
 }
