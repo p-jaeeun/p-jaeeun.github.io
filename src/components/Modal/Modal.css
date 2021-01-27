@@ -12,7 +12,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
+  width: 900px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -24,9 +24,8 @@
 .Modal > *:first-child {
   margin-top: 16px;
 }
-.Modal p.title {
-  font-size: 16pt;
-  font-weight: bold;
+.Modal h2.title {
+  font-weight: 600;
   color: #333;
 }
 .Modal .content {
@@ -47,17 +46,17 @@
   width: 100%;
   padding: 12px 0;
   border-radius: 0 0 10px 10px;
-  background-color: #f0f0f0;
+  background-color: #3e3e3e;
   font-size: 13pt;
   color: #fff;
   border: 0;
   cursor: pointer;
 }
 .Modal .button-wrap button:hover {
-  background-color: #3e3e3e;
+  background-color: #bebebe;
   outline: none;
 }
 .Modal .button-wrap button:active {
-  background-color: #3e3e3e;
+  background-color: #bebebe;
   outline: none;
 }

@@ -2,7 +2,8 @@ import React from "react";
 import "./Modal.css";
 
 const Modal = (props) => {
-  const { isOpen, close, name } = props;
+  console.log(props.key);
+  const { isOpen, close, name, number } = props;
   return (
     <>
       {isOpen ? (
@@ -10,9 +11,9 @@ const Modal = (props) => {
           <div className="Modal-overlay" onClick={close} />
 
           <div className="Modal">
-            <p className="title">{name}</p>
+            <h2 className="title">{name}</h2>
             <div className="content">
-              <p>{props.children}</p>
+              <p>인원:{number}</p>
             </div>
 
             <div className="button-wrap">
@@ -24,4 +25,5 @@ const Modal = (props) => {
     </>
   );
 };
+
 export default Modal;

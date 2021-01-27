@@ -1,22 +1,25 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
+// import { HamburgerMenu } from "react-Hamburger-menu";
 
 class Header extends Component {
   render() {
     return (
       <HeaderWrapper>
-        <LogoLink to="/">p.jaeeun</LogoLink>
+        <Logo to="/">p.jaeeun</Logo>
         <Nav>
           <NavUl>
             <NavList>
-              <StyledLink to="/">Home</StyledLink>
+              <Menu exact to="/">
+                Home
+              </Menu>
             </NavList>
             <NavList>
-              <StyledLink to="/about">About</StyledLink>
+              <Menu to="/about">About</Menu>
             </NavList>
             <NavList>
-              <StyledLink to="/projects">Projects</StyledLink>
+              <Menu to="/projects">Projects</Menu>
             </NavList>
           </NavUl>
         </Nav>
@@ -32,43 +35,63 @@ export default Header;
 const HeaderWrapper = styled.header`
   width: 100%;
   height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 `;
 
-const LogoLink = styled(Link)`
+const Logo = styled(Link)`
   padding: 15px 0 0 100px;
   align-items: center;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 500;
-  color: rgb(101, 101, 101);
+  color: #bebebe;
+  &:hover {
+    color: #000;
+    transition: 0.2s;
+  }
 `;
 
 // navigation
 
 const Nav = styled.nav`
+  width: 400px;
   list-style: none;
-  padding-right: 200px;
+  padding-right: 100px;
 `;
 
 const NavUl = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 `;
 
 const NavList = styled.li`
-  padding-left: 50px;
+  height: 50px;
+  margin-top: 15px;
 `;
 
-const StyledLink = styled(Link)`
+const activeClassName = "selected";
+
+const Menu = styled(NavLink).attrs({ activeClassName })`
+  width: 60px;
+  padding: 20px;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 400;
-  color: rgb(101, 101, 101);
+  color: #bebebe;
   &:hover {
-    color: rgb(255, 200, 0);
+    color: #000;
+    transition: 0.2s;
+  }
+  &.${activeClassName} {
+    color: #fff;
+    background-color: #000;
   }
 `;

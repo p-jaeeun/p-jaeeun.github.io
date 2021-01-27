@@ -16,6 +16,9 @@ export default Footer;
 const FooterWrapper = styled.footer`
   width: 100%;
   height: 40px;
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
 `;
 const FooterList = styled.ul`
   width: 100%;
