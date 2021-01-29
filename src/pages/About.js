@@ -103,6 +103,7 @@ const Container = styled.div`
 const AboutTitle = styled.h3`
   padding-top: 5rem;
   font-size: 1.5rem;
+  color: #3e3e3e;
   font-weight: 100;
 `;
 
@@ -125,6 +126,7 @@ const AboutTextWrapper = styled.div`
 
 const AboutText = styled.p`
   font-size: 0.9rem;
+  color: #3e3e3e;
   margin: 10px;
 `;
 
@@ -141,6 +143,7 @@ const SkillItem = styled.div`
 const SkillDesc = styled.p`
   text-align: center;
   font-size: 0.8rem;
+  color: #3e3e3e;
   padding: 10px 0 0 10px;
 `;
 
