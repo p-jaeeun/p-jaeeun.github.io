@@ -2,8 +2,8 @@ import React from "react";
 import "./Modal.css";
 
 const Modal = (props) => {
-  console.log(props.key);
   const { isOpen, close, name, number } = props;
+
   return (
     <>
       {isOpen ? (

@@ -4,7 +4,7 @@ import styled from "styled-components";
 class About extends Component {
   render() {
     return (
-      <div className="container">
+      <Container>
         <h3 className="about_title text-subtitle">
           "새로운 것을 학습하는 즐거움을 아는 프론트엔드 개발자, 박재은입니다."
         </h3>
@@ -79,12 +79,21 @@ class About extends Component {
             </SkillList>
           </AboutContent>
         </AboutList>
-      </div>
+      </Container>
     );
   }
 }
 
 export default About;
+
+const Container = styled.div`
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  /* header & footer height */
+  margin: -50px 0 -40px 0;
+  text-align: center;
+`;
 
 const AboutList = styled.div`
   width: 100%;
