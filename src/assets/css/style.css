@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
+/* Layout */
 html,
 body {
   font-family: "Poppins", "Noto Sans KR" sans-serif;
@@ -39,35 +40,7 @@ li {
   list-style: none;
 }
 
-/* text-title style */
-.text-title {
-  padding-top: 300px;
-  font-size: 4rem;
-}
-
-.text-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.text-bold {
-  color: rgb(23, 101, 80);
-  font-weight: 400;
-}
-
-.text-content {
-  font-size: 0.9rem;
-  margin: 10px;
-}
-
 /* About page */
-.about_title {
-  padding-top: 5rem;
-}
-.profile {
-  width: 180px;
-  border-radius: 50%;
-}
 
 .icon {
   margin-right: 10px;
@@ -77,12 +50,14 @@ li {
 
 .project__img {
   width: auto;
-  height: 250px;
+  height: 220px;
   border-radius: 10px;
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
   margin: 10px;
 }
+
 .project__img:hover {
-  height: 260px;
+  height: 230px;
   transition: 0.3s;
+  cursor: pointer;
 }

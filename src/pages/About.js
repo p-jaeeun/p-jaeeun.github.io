@@ -5,34 +5,39 @@ class About extends Component {
   render() {
     return (
       <Container>
-        <h3 className="about_title text-subtitle">
+        <AboutTitle>
           "새로운 것을 학습하는 즐거움을 아는 프론트엔드 개발자, 박재은입니다."
-        </h3>
-        <div>
-          <img className="profile" src="/images/profile.png" alt="profile" />
-        </div>
+        </AboutTitle>
+        <React.Fragment>
+          <img
+            src="/images/profile.png"
+            alt="profile"
+            width="180px"
+            border-radius="50%"
+          />
+        </React.Fragment>
         <AboutList>
           <AboutContent>
-            <AboutText>
+            <AboutTextWrapper>
               <h2>Education</h2>
-              <p className="text-content">
+              <AboutText>
                 2020.07~2020.10 <b>구공팩토리</b> 코딩부트캠프 수료
-              </p>
-            </AboutText>
-            <AboutText>
+              </AboutText>
+            </AboutTextWrapper>
+            <AboutTextWrapper>
               <h2>Contact Me</h2>
-              <p className="text-content">
+              <AboutText>
                 <i class="fas fa-phone icon"></i>
                 010.9991.4194
-              </p>
-              <p className="text-content">
+              </AboutText>
+              <AboutText>
                 <i class="fas fa-envelope icon"></i>
                 parkje91@gmail.com
-              </p>
-              <p className="text-content">
+              </AboutText>
+              <AboutText>
                 <i class="fab fa-github icon"></i>p-jaeeun
-              </p>
-            </AboutText>
+              </AboutText>
+            </AboutTextWrapper>
           </AboutContent>
           <AboutContent>
             <h2>Skills</h2>
@@ -95,6 +100,12 @@ const Container = styled.div`
   text-align: center;
 `;
 
+const AboutTitle = styled.h3`
+  padding-top: 5rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+`;
+
 const AboutList = styled.div`
   width: 100%;
   height: auto;
@@ -107,9 +118,14 @@ const AboutContent = styled.div`
   padding-left: 80px;
 `;
 
-const AboutText = styled.div`
+const AboutTextWrapper = styled.div`
   text-align: left;
   padding-bottom: 20px;
+`;
+
+const AboutText = styled.p`
+  font-size: 0.9rem;
+  margin: 10px;
 `;
 
 const SkillList = styled.div`
