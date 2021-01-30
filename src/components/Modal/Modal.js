@@ -13,11 +13,23 @@ const Modal = (props) => {
           <div className="Modal">
             <h2 className="title">{name}</h2>
             <div className="content">
-              <p>주제: {desc}</p>
-              <p>인원: {number}</p>
-              <p>특징: {feature}</p>
-              <p>스택: {stack}</p>
-              <p>Git:{git}</p>
+              <p>
+                <span className="content-subtitle">주제</span>: {desc}
+              </p>
+              <p>
+                <span className="content-subtitle">인원</span>: {number}
+              </p>
+              <p>
+                <span className="content-subtitle">특징</span>: {feature}
+              </p>
+              <p>
+                <span className="content-subtitle">스택</span>: {stack}
+              </p>
+              <p>
+                <a href={git} className="content-subtitle gitlink">
+                  ▶︎▶︎ Go to Github <i class="fab fa-github "></i>
+                </a>
+              </p>
             </div>
 
             <div className="button-wrap">

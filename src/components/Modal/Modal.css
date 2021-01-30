@@ -32,19 +32,28 @@
   border-top: 1px solid #bebebe;
   margin-top: 16px;
 }
+
 .Modal .content p {
-  padding: 8px;
+  padding: 10px;
   font-size: 0.9rem;
-  font-weight: 200;
   text-align: left;
   color: #3e3e3e;
+  letter-spacing: 0.1rem;
 }
-.Modal .content a {
-  padding: 8px;
-  font-size: 0.9rem;
-  font-weight: 200;
-  text-align: left;
-  color: #3e3e3e;
+
+.content-subtitle {
+  font-weight: bold;
+  color: #000;
+  margin-right: 10px;
+}
+
+.gitlink {
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: none;
+}
+.gitlink:hover {
+  cursor: pointer;
 }
 .Modal .button-wrap {
   margin: 0;

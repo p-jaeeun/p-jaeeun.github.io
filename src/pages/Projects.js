@@ -11,12 +11,11 @@ class Projects extends Component {
         {
           id: 0,
           name: "90Parking Lot",
-          desc:
-            "회원과 비회원이 입출차, 요금정산이 가능한 무인주차 정산 시스템",
+          desc: "회원과 비회원이 이용 가능한 무인주차 정산 시스템",
           feature:
-            "웹 어플리케이션의 전반적인 흐름을 이해하고자 SSR 방식으로 구현해본 첫 개인 프로젝트",
+            "웹 어플리케이션의 전반적인 흐름을 이해하고자 SSR 방식으로 구현(풀스택)",
           number: "1명",
-          stack: "javscript,HTML,CSS,Node.js,Mysql",
+          stack: "Javscript,HTML,CSS,Node.js,Mysql",
           git: "https://github.com/p-jaeeun/miniproject",
           src: "/images/project1.png",
         },
@@ -25,9 +24,9 @@ class Projects extends Component {
           name: "HIDDENC",
           desc: "사람들에게 알려지지 않은 카페 정보를 공유할 수 있는 서비스",
           feature:
-            "클라이언트 사이드 렌더링 방식으로 SPA 구현, 자바스크립트 MVC패턴 구현",
+            "VanillaJS MVC패턴 구현, 클라이언트 사이드 렌더링 방식으로 SPA 구현 ",
           number: "4명",
-          stack: "javscript,HTML,CSS,Bootstrap,JAVA Spring,Maven,Mysql",
+          stack: "Javscript,HTML,CSS,Bootstrap,JAVA Spring,Maven,Mysql",
           git: "https://github.com/p-jaeeun/coffee-front",
           src: "/images/project2.png",
         },
