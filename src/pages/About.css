@@ -20,21 +20,26 @@
   .about_title {
     font-size: 1.1rem;
   }
+
   .about_profile img {
     width: 200px;
     border-radius: 50%;
   }
+
   .about_list {
     flex-wrap: wrap;
   }
+
   .info {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   .about-text {
     padding-left: 10px;
   }
+
   .second {
     margin-left: -90px;
   }
@@ -42,6 +47,7 @@
   .about_content {
     padding-left: 50px;
   }
+
   .skill_list {
     display: flex;
     flex-direction: column;
@@ -55,12 +61,15 @@
     width: 250px;
     border-radius: 50%;
   }
+
   .info {
     display: block;
   }
+
   .about_list {
     flex-wrap: wrap;
   }
+
   .skill_list {
     display: block;
     flex-wrap: wrap;

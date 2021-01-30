@@ -107,7 +107,7 @@ const Container = styled.div`
 `;
 
 const ProjectWrapper = styled.div`
-  padding-top: 250px;
+  padding-top: 200px;
 `;
 
 const ProjectList = styled.div`
