@@ -1,0 +1,142 @@
+/* mediaquery */
+@media screen and (min-width: 1200px) and (max-width: 1330px) {
+  .about_title {
+    font-size: 1.3rem;
+  }
+
+  .about_list {
+    padding: 0px;
+  }
+  .about_item {
+    padding-left: 0;
+  }
+
+  .skill_item {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .about_title {
+    font-size: 1.1rem;
+  }
+  .about_profile img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  .about_list {
+    flex-wrap: wrap;
+  }
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .about-text {
+    padding-left: 10px;
+  }
+  .second {
+    margin-left: -90px;
+  }
+
+  .about_content {
+    padding-left: 50px;
+  }
+  .skill_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .about_profile img {
+    width: 250px;
+    border-radius: 50%;
+  }
+  .info {
+    display: block;
+  }
+  .about_list {
+    flex-wrap: wrap;
+  }
+  .skill_list {
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  /* header & footer height */
+  margin: -50px 0 -40px 0;
+  text-align: center;
+}
+
+.about_title {
+  padding-top: 5rem;
+  font-size: 1.5rem;
+  color: #3e3e3e;
+  font-weight: 100;
+}
+.about-text {
+  font-size: 1.4rem;
+}
+
+.about_profile img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.about_list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: col;
+  justify-content: center;
+  padding: 10px;
+}
+
+.about_item {
+  padding-left: 80px;
+}
+
+.about_content {
+  width: 350px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.about_content p {
+  font-size: 0.9rem;
+  color: #3e3e3e;
+  margin: 10px;
+}
+
+.skill_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.skill_item {
+  width: 350px;
+  padding-right: 20px;
+}
+
+.skill_item li {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.skill_item p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #3e3e3e;
+  padding: 10px 0 0 10px;
+}

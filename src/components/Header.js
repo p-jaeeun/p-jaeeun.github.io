@@ -54,6 +54,17 @@ const Logo = styled(Link)`
     color: #000;
     transition: 0.2s;
   }
+  @media all and (min-width: 1000px) and (max-width: 1330px) {
+    padding-left: 50px;
+  }
+  @media all and (min-width: 768px) and (max-width: 999px) {
+    padding-left: 30px;
+    font-size: 1.2rem;
+  }
+  @media all and (max-width: 768px) {
+    padding: 20px 0 0 30px;
+    font-size: 1.1rem;
+  }
 `;
 
 // navigation
@@ -62,6 +73,14 @@ const Nav = styled.nav`
   width: 400px;
   list-style: none;
   padding-right: 100px;
+  @media all and (min-width: 1000px) and (max-width: 1330px) {
+    padding-right: 90px;
+    width: 300px;
+  }
+  @media all and (min-width: 768px) and (max-width: 999px) {
+    padding-right: 20px;
+    width: 300px;
+  }
 `;
 
 const NavUl = styled.ul`

@@ -41,6 +41,17 @@ const HomeWrapper = styled.div`
 
 const Title = styled.h1`
   font-size: 5.5rem;
+  @media all and (min-width: 930px) and (max-width: 1330px) {
+    font-size: 5rem;
+  }
+  @media all and (min-width: 768px) and (max-width: 929px) {
+    font-size: 4rem;
+  }
+  @media all and (min-width: 550px) and (max-width: 768px) {
+    font-size: 3rem;
+  }
+  @media all and (max-width: 549px) {
+    font-size: 2rem;
 `;
 
 const Subtitle = styled.p`
@@ -82,5 +93,14 @@ const Subtitle = styled.p`
     50% {
       border-color: #bebebe;
     }
+  }
+  @media all and (min-width: 768px) and (max-width: 1330px) {
+    font-size: 1.4rem;
+  }
+  @media all and (min-width: 550px) and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+  @media all and (max-width: 550px) {
+    font-size: 0.9rem;
   }
 `;
