@@ -32,6 +32,7 @@ const HomeContainer = styled.div`
   text-align: center;
 `;
 const HomeWrapper = styled.div`
+  width: 100%;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -41,17 +42,12 @@ const HomeWrapper = styled.div`
 
 const Title = styled.h1`
   font-size: 5.5rem;
-  @media all and (min-width: 930px) and (max-width: 1330px) {
+  @media screen and (min-width: 768px) and (max-width: 1330px) {
     font-size: 5rem;
   }
-  @media all and (min-width: 768px) and (max-width: 929px) {
+  @media screen and (max-width: 768px) {
     font-size: 4rem;
   }
-  @media all and (min-width: 550px) and (max-width: 768px) {
-    font-size: 3rem;
-  }
-  @media all and (max-width: 549px) {
-    font-size: 2rem;
 `;
 
 const Subtitle = styled.p`
@@ -72,7 +68,6 @@ const Subtitle = styled.p`
     overflow: hidden;
     border-right: 1px solid #bebebe;
     white-space: nowrap;
-    /* letter-spacing: 0.1rem; */
     animation: typing 6s steps(35, end), blink 0.75s step-end infinite;
   }
 
@@ -85,6 +80,7 @@ const Subtitle = styled.p`
       width: 100%;
     }
   }
+
   @keyframes blink {
     from,
     to {
@@ -94,13 +90,11 @@ const Subtitle = styled.p`
       border-color: #bebebe;
     }
   }
-  @media all and (min-width: 768px) and (max-width: 1330px) {
+
+  @media screen and (min-width: 768px) and (max-width: 1330px) {
     font-size: 1.4rem;
   }
-  @media all and (min-width: 550px) and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 1.2rem;
-  }
-  @media all and (max-width: 550px) {
-    font-size: 0.9rem;
   }
 `;
