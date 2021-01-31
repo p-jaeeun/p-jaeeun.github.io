@@ -134,6 +134,10 @@
   color: #3e3e3e;
 }
 
+.icon {
+  margin-right: 10px;
+}
+
 .skill_list {
   display: flex;
   flex-direction: row;

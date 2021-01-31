@@ -45,8 +45,13 @@ const Title = styled.h1`
   @media screen and (min-width: 768px) and (max-width: 1330px) {
     font-size: 5rem;
   }
-  @media screen and (max-width: 768px) {
+  /* Tablet */
+  @media screen and (min-width: 480px) and (max-width: 768px) {
     font-size: 4rem;
+  }
+  /* Mobile */
+  @media screen and (max-width: 480px) {
+    font-size: 3.3rem;
   }
 `;
 

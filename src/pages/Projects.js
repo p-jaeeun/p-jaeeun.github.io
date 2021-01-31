@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Modal from "components/Modal/Modal";
-import styled from "styled-components";
+import "./Project.css";
 
 class Projects extends Component {
   constructor(props) {
@@ -58,12 +58,12 @@ class Projects extends Component {
 
   render() {
     return (
-      <Container>
-        <ProjectWrapper>
-          <Title>Projects</Title>
-          <ProjectList>
+      <div className="project_container">
+        <div className="project_wrapper">
+          <h3 className="project_title">Projects</h3>
+          <ul className="project_list">
             {this.state.project.map((item) => (
-              <React.Fragment key={item.id}>
+              <li>
                 <div onClick={(e) => this.openModal(e, item.id)}>
                   <img
                     className="project__img"
@@ -71,7 +71,7 @@ class Projects extends Component {
                     alt={item.name}
                   />
                 </div>
-              </React.Fragment>
+              </li>
             ))}
             {this.state.project
               .filter((item) => item.id === this.state.selectedId)
@@ -88,35 +88,11 @@ class Projects extends Component {
                   close={this.closeModal}
                 />
               ))}
-          </ProjectList>
-        </ProjectWrapper>
-      </Container>
+          </ul>
+        </div>
+      </div>
     );
   }
 }
 
 export default Projects;
-
-const Container = styled.div`
-  width: 100%;
-  height: auto;
-  padding-top: 50px;
-  /* header & footer height */
-  margin: -50px 0 -40px 0;
-  text-align: center;
-`;
-
-const ProjectWrapper = styled.div`
-  padding-top: 200px;
-`;
-
-const ProjectList = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
-const Title = styled.h3`
-  font-size: 1.5rem;
-  font-weight: 300;
-`;
