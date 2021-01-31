@@ -1,3 +1,16 @@
+@media screen and (max-width: 768px) {
+  .Modal {
+    width: 420px;
+  }
+
+  .Modal .content p {
+    padding: 10px 0px;
+    font-size: 0.7rem;
+    text-align: left;
+    color: #3e3e3e;
+  }
+}
+
 .Modal-overlay {
   position: fixed;
   top: 0;

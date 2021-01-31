@@ -6,15 +6,15 @@
     justify-content: space-evenly;
     align-items: stretch;
   }
-  .about_list {
-    flex-direction: column !important;
+  .container .about_list {
+    flex-direction: column;
   }
-  .about_item {
-    padding-left: 0 !important;
+  .about_list .about_item {
+    padding-left: 0;
   }
 
-  .skill_item {
-    padding-right: 70px !important;
+  .skill_list .skill_item {
+    padding-right: 70px;
   }
 }
 
@@ -27,16 +27,16 @@
     align-items: stretch;
   }
 
-  .about_title {
-    font-size: 1.3rem !important;
+  .container .about_title {
+    font-size: 1.3rem;
   }
 
-  .about_list {
-    flex-direction: column !important;
+  .container .about_list {
+    flex-direction: column;
   }
 
-  .about_item {
-    padding-left: 0 !important;
+  .about_list .about_item {
+    padding-left: 0;
   }
 
   .about_content {
@@ -45,18 +45,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about_title {
-    font-size: 1.2rem !important;
+  .container .about_title {
+    font-size: 1.2rem;
   }
 
-  .about_profile img {
-    width: 230px !important;
+  .container .about_profile img {
+    width: 230px;
     border-radius: 50%;
   }
 
-  .about_list {
-    flex-direction: column !important;
-    justify-content: center !important;
+  .container .about_list {
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
   }
 
@@ -64,27 +64,26 @@
     text-align: center;
   }
 
-  .about_item {
+  .about_list .about_item {
     width: 100%;
-    padding: 0 !important;
+    padding: 0;
   }
 
-  .about_content {
+  .about_list .about_content {
     width: 100%;
-    text-align: center !important;
+    text-align: center;
   }
 
-  .skill_list {
-    flex-direction: column !important;
+  .about_item .skill_list {
+    flex-direction: column;
   }
 
-  .skill_item {
-    padding-right: 0 !important;
-  }
-  .skill_item li {
-    padding: 0 25%;
+  .skill_list .skill_item {
+    padding-right: 0;
+    margin: 0 auto;
   }
 }
+
 .container {
   width: 100%;
   height: auto;

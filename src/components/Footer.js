@@ -3,11 +3,7 @@ import styled from "styled-components";
 
 const Footer = () => (
   <FooterWrapper>
-    <FooterList>
-      <FooterItem>
-        <span> © 2020 | Jaeeun All rights reserved.</span>
-      </FooterItem>
-    </FooterList>
+    <FooterText>© 2020 | Jaeeun All rights reserved</FooterText>
   </FooterWrapper>
 );
 
@@ -20,16 +16,11 @@ const FooterWrapper = styled.footer`
   overflow: hidden;
   bottom: 0;
 `;
-const FooterList = styled.ul`
+const FooterText = styled.div`
   width: 100%;
+  height: 40px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
-const FooterItem = styled.li`
-  list-style: none;
+  padding: 10px 0;
   text-align: center;
   font-size: 0.9rem;
   font-weight: 350;

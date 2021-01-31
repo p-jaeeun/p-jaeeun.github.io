@@ -43,35 +43,20 @@ class About extends Component {
                 <h3>Front-end</h3>
                 <ul>
                   <li>
-                    <img
-                      className="about_skill"
-                      src="/images/javascript.png"
-                      alt="javascript"
-                    />
+                    <img src="/images/javascript.png" alt="javascript" />
+
                     <p>VanillaJS, es5와 es6 문법의 이해</p>
                   </li>
                   <li>
-                    <img
-                      className="about_skill"
-                      src="/images/html.png"
-                      alt="html"
-                    />
+                    <img src="/images/html.png" alt="html" />
                     <p>html5 웹표준 이해, 의미있는 마크업</p>
                   </li>
                   <li>
-                    <img
-                      className="about_skill"
-                      src="/images/css.png"
-                      alt="css"
-                    />
+                    <img src="/images/css.png" alt="css" />
                     <p>레이아웃을 구성하고, 반응형 디자인 구현 가능</p>
                   </li>
                   <li>
-                    <img
-                      className="about_skill"
-                      src="/images/react.png"
-                      alt="react"
-                    />
+                    <img src="/images/react.png" alt="react" />
                     <p>컴포넌트의 이해와 spa 구현 가능</p>
                   </li>
                 </ul>
@@ -80,22 +65,14 @@ class About extends Component {
                 <h3>Back-end</h3>
                 <ul>
                   <li>
-                    <img
-                      className="about_skill"
-                      src="/images/nodejs.png"
-                      alt="nodejs"
-                    />
+                    <img src="/images/nodejs.png" alt="nodejs" />
                     <p>node를 이용한 SSR환경 개발 경험</p>
                   </li>
                 </ul>
                 <h3>Devops</h3>
                 <ul>
                   <li>
-                    <img
-                      className="about_skill"
-                      src="/images/github.png"
-                      alt="github"
-                    />
+                    <img src="/images/github.png" alt="github" />
                     <p>git을 이용한 형상 관리</p>
                   </li>
                 </ul>
