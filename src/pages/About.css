@@ -1,19 +1,105 @@
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+  .about_list {
+    flex-direction: column !important;
+  }
+  .about_item {
+    padding-left: 0 !important;
+  }
+
+  .skill_item {
+    padding-right: 70px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .about_title {
+    font-size: 1.3rem !important;
+  }
+
+  .about_list {
+    flex-direction: column !important;
+  }
+
+  .about_item {
+    padding-left: 0 !important;
+  }
+
+  .about_content {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about_title {
+    font-size: 1.2rem !important;
+  }
+
+  .about_profile img {
+    width: 230px !important;
+    border-radius: 50%;
+  }
+
+  .about_list {
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .about_title {
+    text-align: center;
+  }
+
+  .about_item {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .about_content {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .skill_list {
+    flex-direction: column !important;
+  }
+
+  .skill_item {
+    padding-right: 0 !important;
+  }
+  .skill_item li {
+    padding: 0 25%;
+  }
+}
 .container {
   width: 100%;
   height: auto;
   padding-top: 50px;
-  /* header & footer height */
   margin: 0 0 -40px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 
 .about_title {
   text-align: center;
-  margin-top: 5rem;
   font-size: 1.5rem;
   color: #3e3e3e;
   font-weight: 100;
@@ -40,7 +126,6 @@
 }
 
 .about_content {
-  width: 100%;
   text-align: left;
   padding-bottom: 20px;
 }
@@ -61,6 +146,9 @@
   padding-right: 20px;
 }
 
+.skill_item ul {
+  padding: 0;
+}
 .skill_item li {
   display: flex;
   flex-direction: row;

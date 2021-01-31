@@ -12,30 +12,32 @@ class About extends Component {
           <img src="/images/profile.png" alt="profile" />
         </div>
         <div className="about_list">
-          <div className="about_item info">
-            <div className="about_content">
-              <h2 className="about-text">Education</h2>
-              <p>
-                2020.07~2020.10 <b>구공팩토리</b> 코딩부트캠프 수료
-              </p>
-            </div>
-            <div className="about_content">
-              <h2 className="about-text">Contact Me</h2>
-              <p>
-                <i class="fas fa-phone icon"></i>
-                010.9991.4194
-              </p>
-              <p>
-                <i class="fas fa-envelope icon"></i>
-                parkje91@gmail.com
-              </p>
-              <p>
-                <i class="fab fa-github icon"></i>p-jaeeun
-              </p>
+          <div className="about_item">
+            <div className="content-wrapper">
+              <div className="about_content">
+                <h2 className="about-text">Education</h2>
+                <p>
+                  2020.07~2020.10 <b>구공팩토리</b> 코딩부트캠프 수료
+                </p>
+              </div>
+              <div className="about_content">
+                <h2 className="about-text">Contact Me</h2>
+                <p>
+                  <i class="fas fa-phone icon"></i>
+                  010.9991.4194
+                </p>
+                <p>
+                  <i class="fas fa-envelope icon"></i>
+                  parkje91@gmail.com
+                </p>
+                <p>
+                  <i class="fab fa-github icon"></i>p-jaeeun
+                </p>
+              </div>
             </div>
           </div>
           <div className="about_item ">
-            <h2 className="about-text second">Skills</h2>
+            <h2 className="about-text">Skills</h2>
             <div className="skill_list">
               <div className="skill_item">
                 <h3>Front-end</h3>
