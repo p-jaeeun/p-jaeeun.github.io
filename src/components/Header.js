@@ -1,9 +1,31 @@
 import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
-// import { HamburgerMenu } from "react-Hamburger-menu";
 
 class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isMenuOpen: false,
+    };
+  }
+
+  openMenu = () => {
+    if (this.state.isMenuOpen === false) {
+      this.setState({
+        isMenuOpen: true,
+      });
+    } else {
+      this.setState({
+        isOpen: false,
+      });
+    }
+  };
+
+  closeMenu = () => {
+    this.setState({ isMenuOpen: false });
+  };
+
   render() {
     return (
       <HeaderWrapper>
