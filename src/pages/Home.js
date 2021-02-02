@@ -50,7 +50,7 @@ const Title = styled.h1`
     font-size: 4rem;
   }
   /* Mobile */
-  @media screen and (max-width: 480px) {
+  @media (max-width: 480px) {
     font-size: 3.3rem;
   }
 `;

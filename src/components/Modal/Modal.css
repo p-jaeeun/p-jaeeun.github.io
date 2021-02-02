@@ -1,11 +1,11 @@
-@media screen and (max-width: 768px) {
-  .Modal {
+@media (max-width: 768px) {
+  #modal-root .Modal {
     width: 420px;
   }
 
-  .Modal .content p {
+  #modal-root .Modal .content p {
     padding: 10px 0px;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-align: left;
     color: #3e3e3e;
   }
@@ -25,7 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 620px;
+  width: 550px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -40,6 +40,7 @@
 .Modal h2.title {
   font-weight: 600;
   color: #000;
+  text-align: center;
 }
 .Modal .content {
   border-top: 1px solid #bebebe;

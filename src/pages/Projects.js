@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Modal from "components/Modal/Modal";
+import Portal from "components/Portal";
 import "./Project.css";
 
 class Projects extends Component {
@@ -76,17 +77,19 @@ class Projects extends Component {
             {this.state.project
               .filter((item) => item.id === this.state.selectedId)
               .map((item) => (
-                <Modal
-                  key={item.id}
-                  name={item.name}
-                  desc={item.desc}
-                  feature={item.feature}
-                  git={item.git}
-                  stack={item.stack}
-                  number={item.number}
-                  isOpen={this.state.isModalOpen}
-                  close={this.closeModal}
-                />
+                <Portal elementId="modal-root">
+                  <Modal
+                    key={item.id}
+                    name={item.name}
+                    desc={item.desc}
+                    feature={item.feature}
+                    git={item.git}
+                    stack={item.stack}
+                    number={item.number}
+                    isOpen={this.state.isModalOpen}
+                    close={this.closeModal}
+                  />
+                </Portal>
               ))}
           </ul>
         </div>
