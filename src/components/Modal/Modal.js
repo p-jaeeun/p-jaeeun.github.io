@@ -2,7 +2,17 @@ import React from "react";
 import "./Modal.css";
 
 const Modal = (props) => {
-  const { isOpen, close, name, number, desc, feature, stack, git } = props;
+  const {
+    isOpen,
+    close,
+    name,
+    number,
+    desc,
+    feature,
+    stack,
+    git,
+    role,
+  } = props;
 
   return (
     <>
@@ -19,8 +29,9 @@ const Modal = (props) => {
               <p>
                 <span className="content-subtitle">인원</span>: {number}
               </p>
+
               <p>
-                <span className="content-subtitle">특징</span>: {feature}
+                <span className="content-subtitle">역할</span>: {role}
               </p>
               <p>
                 <span className="content-subtitle">스택</span>: {stack}

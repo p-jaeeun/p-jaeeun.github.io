@@ -1,11 +1,11 @@
 @media (max-width: 768px) {
   #modal-root .Modal {
-    width: 420px;
+    width: 400px;
   }
 
   #modal-root .Modal .content p {
     padding: 10px 0px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     text-align: left;
     color: #3e3e3e;
   }

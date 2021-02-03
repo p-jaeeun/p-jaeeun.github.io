@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Ul = styled.ul`
+const NavUl = styled.ul`
   margin: 0;
   list-style: none;
   display: flex;
@@ -33,7 +33,7 @@ const Ul = styled.ul`
 
 const RightNav = ({ open }) => {
   return (
-    <Ul open={open}>
+    <NavUl open={open}>
       <li>
         <Link exact to="/">
           Home
@@ -45,7 +45,7 @@ const RightNav = ({ open }) => {
       <li>
         <Link to="/projects">Projects</Link>
       </li>
-    </Ul>
+    </NavUl>
   );
 };
 

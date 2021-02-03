@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <div className="container">
         <h3 className="about_title">
-          "새로운 것을 학습하는 즐거움을 아는 프론트엔드 개발자, 박재은입니다."
+          "새로운 것을 학습할 때의 즐거움을 아는 개발자"
         </h3>
         <div className="about_profile">
           <img src="/images/profile.png" alt="profile" />
@@ -45,7 +45,7 @@ class About extends Component {
                   <li>
                     <img src="/images/javascript.png" alt="javascript" />
 
-                    <p>VanillaJS, es5와 es6 문법의 이해</p>
+                    <p>VanillaJS, ES5와 ES6 문법의 이해</p>
                   </li>
                   <li>
                     <img src="/images/html.png" alt="html" />
@@ -57,7 +57,7 @@ class About extends Component {
                   </li>
                   <li>
                     <img src="/images/react.png" alt="react" />
-                    <p>컴포넌트의 이해와 spa 구현 가능</p>
+                    <p>컴포넌트의 이해와 SPA 구현 가능</p>
                   </li>
                 </ul>
               </div>
