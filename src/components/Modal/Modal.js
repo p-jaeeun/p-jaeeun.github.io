@@ -24,17 +24,17 @@ const Modal = (props) => {
             <h2 className="title">{name}</h2>
             <div className="content">
               <p>
-                <span className="content-subtitle">주제</span>: {desc}
+                <span className="content-subtitle">주제</span> {desc}
               </p>
               <p>
-                <span className="content-subtitle">인원</span>: {number}
+                <span className="content-subtitle">인원</span> {number}
               </p>
 
               <p>
-                <span className="content-subtitle">역할</span>: {role}
+                <span className="content-subtitle">역할</span> {role}
               </p>
               <p>
-                <span className="content-subtitle">스택</span>: {stack}
+                <span className="content-subtitle">스택</span> {stack}
               </p>
               <p>
                 <a href={git} className="content-subtitle gitlink">

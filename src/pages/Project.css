@@ -13,6 +13,11 @@
   .project_list {
     flex-direction: column !important;
   }
+  .project_list .project__img:hover {
+    width: 410px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 }
 
 .project_container {
