@@ -1,49 +1,28 @@
 import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
+import Burger from "components/BurgerMenu/Burger";
 
 class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isMenuOpen: false,
-    };
-  }
-
-  openMenu = () => {
-    if (this.state.isMenuOpen === false) {
-      this.setState({
-        isMenuOpen: true,
-      });
-    } else {
-      this.setState({
-        isOpen: false,
-      });
-    }
-  };
-
-  closeMenu = () => {
-    this.setState({ isMenuOpen: false });
-  };
-
   render() {
     return (
       <HeaderWrapper>
         <Logo to="/">p.jaeeun</Logo>
+        <Burger />
         <Nav>
-          <NavUl>
-            <NavList>
+          <Ul>
+            <Li>
               <Menu exact to="/">
                 Home
               </Menu>
-            </NavList>
-            <NavList>
+            </Li>
+            <Li>
               <Menu to="/about">About</Menu>
-            </NavList>
-            <NavList>
+            </Li>
+            <Li>
               <Menu to="/projects">Projects</Menu>
-            </NavList>
-          </NavUl>
+            </Li>
+          </Ul>
         </Nav>
       </HeaderWrapper>
     );
@@ -92,36 +71,46 @@ const Logo = styled(Link)`
 // navigation
 
 const Nav = styled.nav`
-  width: 400px;
   list-style: none;
-  padding-right: 100px;
+  margin-right: 10rem;
   @media all and (min-width: 1000px) and (max-width: 1330px) {
-    padding-right: 90px;
-    width: 300px;
+    margin-right: 9rem;
   }
   @media all and (min-width: 768px) and (max-width: 999px) {
-    padding-right: 20px;
-    width: 300px;
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
-const NavUl = styled.ul`
+const Ul = styled.ul`
+  height: 50px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
-`;
 
-const NavList = styled.li`
-  height: 50px;
-  margin-top: 15px;
+  /* @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    padding-top: 3.5rem;
+    transition: transform 0.3s ease-in-out;
+  } */
 `;
+const Li = styled.li``;
 
 const activeClassName = "selected";
 
 const Menu = styled(NavLink).attrs({ activeClassName })`
-  width: 60px;
   padding: 20px;
   text-decoration: none;
   font-size: 1.2rem;
