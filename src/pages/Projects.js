@@ -13,8 +13,6 @@ class Projects extends Component {
           id: 0,
           name: "90Parking Lot",
           desc: "회원과 비회원이 이용 가능한 무인주차 정산 시스템",
-          feature:
-            "웹 어플리케이션의 전반적인 흐름을 이해하고자 SSR 방식으로 구현",
           role: "기획, 디자인, 서버 구축 및 DB연결, 입출차 기능 구현 ",
           number: "1명",
           stack: "Javscript,HTML,CSS,Node.js,Mysql",
@@ -25,9 +23,7 @@ class Projects extends Component {
           id: 1,
           name: "HIDDENC",
           desc: "사람들에게 알려지지 않은 카페 정보를 공유할 수 있는 서비스",
-          role: "기획, 디자인, VanillaJS MVC패턴 적용, 관리자 페이지 구현 ",
-          feature:
-            "VanillaJS MVC패턴 구현, 클라이언트 사이드 렌더링 방식으로 SPA 구현 ",
+          role: "기획, 디자인, VanillaJS MVC패턴 적용, SPA 구현",
           number: "4명",
           stack: "Javscript,HTML,CSS,Bootstrap,JAVA Spring,Maven,Mysql",
           git: "https://github.com/p-jaeeun/coffee-front",
@@ -38,7 +34,6 @@ class Projects extends Component {
           name: "BlackGreen",
           desc: "친환경 패션 브랜드를 소비자들에게 소개하는 서비스",
           role: "기획, 디자인, axios 활용한 웹서버 통신, view 구현",
-          feature: "WTM 해커톤에 참여하여 2주동안 리액트를 공부하여 SPA 구현",
           number: "3명",
           stack: "React.js,Node.js,HTML,CSS,Spring boot",
           git: "https://github.com/p-jaeeun/WTM_hackathon",
