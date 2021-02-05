@@ -1,28 +1,28 @@
 import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
-import Burger from "components/BurgerMenu/Burger";
+import BurgerMenu from "components/Burger";
 
 class Header extends Component {
   render() {
     return (
       <HeaderWrapper>
         <Logo to="/">p.jaeeun</Logo>
-        <Burger />
+        <BurgerMenu />
         <Nav>
-          <Ul>
-            <Li>
+          <NavUl>
+            <NavItem>
               <Menu exact to="/">
                 Home
               </Menu>
-            </Li>
-            <Li>
+            </NavItem>
+            <NavItem>
               <Menu to="/about">About</Menu>
-            </Li>
-            <Li>
+            </NavItem>
+            <NavItem>
               <Menu to="/projects">Projects</Menu>
-            </Li>
-          </Ul>
+            </NavItem>
+          </NavUl>
         </Nav>
       </HeaderWrapper>
     );
@@ -84,7 +84,7 @@ const Nav = styled.nav`
   }
 `;
 
-const Ul = styled.ul`
+const NavUl = styled.ul`
   height: 50px;
   display: flex;
   flex-flow: row nowrap;
@@ -106,7 +106,7 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
   } */
 `;
-const Li = styled.li``;
+const NavItem = styled.li``;
 
 const activeClassName = "selected";
 

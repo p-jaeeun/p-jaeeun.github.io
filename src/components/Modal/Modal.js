@@ -2,17 +2,7 @@ import React from "react";
 import "./Modal.css";
 
 const Modal = (props) => {
-  const {
-    isOpen,
-    close,
-    name,
-    number,
-    desc,
-    feature,
-    stack,
-    git,
-    role,
-  } = props;
+  const { isOpen, close, name, number, desc, stack, git, role } = props;
 
   return (
     <>
