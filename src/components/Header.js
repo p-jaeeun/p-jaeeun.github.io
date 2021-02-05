@@ -1,33 +1,56 @@
-import React, { Component } from "react";
-import { NavLink, Link } from "react-router-dom";
+import React from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import BurgerMenu from "components/Burger";
 
-class Header extends Component {
-  render() {
-    return (
-      <HeaderWrapper>
-        <Logo to="/">p.jaeeun</Logo>
-        <BurgerMenu />
-        <Nav>
-          <NavUl>
-            <NavItem>
-              <Menu exact to="/">
-                Home
-              </Menu>
-            </NavItem>
-            <NavItem>
-              <Menu to="/about">About</Menu>
-            </NavItem>
-            <NavItem>
-              <Menu to="/projects">Projects</Menu>
-            </NavItem>
-          </NavUl>
-        </Nav>
-      </HeaderWrapper>
-    );
-  }
-}
+const Header = () => {
+  const location = useLocation();
+  return (
+    <>
+      {location.pathname === "/" ? (
+        <HeaderWrapper isHome>
+          <Logo to="/">p.jaeeun</Logo>
+          <BurgerMenu />
+          <Nav>
+            <NavUl>
+              <NavItem>
+                <Menu exact to="/">
+                  Home
+                </Menu>
+              </NavItem>
+              <NavItem>
+                <Menu to="/about">About</Menu>
+              </NavItem>
+              <NavItem>
+                <Menu to="/projects">Projects</Menu>
+              </NavItem>
+            </NavUl>
+          </Nav>
+        </HeaderWrapper>
+      ) : (
+        <HeaderWrapper>
+          <Logo to="/">p.jaeeun</Logo>
+          <BurgerMenu />
+          <Nav>
+            <NavUl>
+              <NavItem>
+                <Menu exact to="/">
+                  Home
+                </Menu>
+              </NavItem>
+              <NavItem>
+                <Menu to="/about">About</Menu>
+              </NavItem>
+              <NavItem>
+                <Menu to="/projects">Projects</Menu>
+              </NavItem>
+            </NavUl>
+          </Nav>
+        </HeaderWrapper>
+      )}
+    </>
+  );
+};
 
 export default Header;
 
@@ -42,6 +65,7 @@ const HeaderWrapper = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: ${(props) => (props.isHome ? "transparent" : "#fff")};
 `;
 
 const Logo = styled(Link)`
@@ -92,19 +116,6 @@ const NavUl = styled.ul`
   align-items: center;
   margin: 0;
   padding: 0;
-
-  /* @media (max-width: 768px) {
-    flex-flow: column nowrap;
-    align-items: center;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100vh;
-    padding-top: 3.5rem;
-    transition: transform 0.3s ease-in-out;
-  } */
 `;
 const NavItem = styled.li``;
 
