@@ -58,7 +58,7 @@ export default Header;
 
 const HeaderWrapper = styled.header`
   width: 100%;
-  height: 50px;
+  height: 55px;
   position: fixed;
   top: 0;
   left: 0;
@@ -70,7 +70,7 @@ const HeaderWrapper = styled.header`
 `;
 
 const Logo = styled(Link)`
-  padding: 15px 0 0 100px;
+  padding: 15px 0 15px 100px;
   align-items: center;
   text-align: center;
   font-size: 1.3rem;
@@ -110,7 +110,7 @@ const Nav = styled.nav`
 `;
 
 const NavUl = styled.ul`
-  height: 50px;
+  height: 55px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -123,7 +123,7 @@ const NavItem = styled.li``;
 const activeClassName = "selected";
 
 const Menu = styled(NavLink).attrs({ activeClassName })`
-  padding: 20px;
+  padding: 16px;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 400;
