@@ -52,7 +52,7 @@ const NavUl = styled.ul`
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 100%;
     width: 250px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;

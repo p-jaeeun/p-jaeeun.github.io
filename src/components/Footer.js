@@ -27,6 +27,7 @@ const FooterWrapper = styled.footer`
   position: fixed;
   overflow: hidden;
   bottom: 0;
+  border-top: ${(props) => (props.isHome ? null : "solid 1px #f3f3f3")};
   background-color: ${(props) => (props.isHome ? "transparent" : "#fff")};
 `;
 const FooterText = styled.div`

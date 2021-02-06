@@ -65,6 +65,7 @@ const HeaderWrapper = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: ${(props) => (props.isHome ? null : "solid 1px #f3f3f3")};
   background-color: ${(props) => (props.isHome ? "transparent" : "#fff")};
 `;
 
@@ -87,7 +88,7 @@ const Logo = styled(Link)`
     font-size: 1.2rem;
   }
   @media all and (max-width: 768px) {
-    padding: 20px 0 0 30px;
+    padding: 15px 0 0 30px;
     font-size: 1.1rem;
   }
 `;
