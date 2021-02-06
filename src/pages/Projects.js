@@ -63,7 +63,10 @@ class Projects extends Component {
           <ul className="project_list">
             {this.state.project.map((item) => (
               <li>
-                <div onClick={(e) => this.openModal(e, item.id)}>
+                <div
+                  className="overlay"
+                  onClick={(e) => this.openModal(e, item.id)}
+                >
                   <img
                     className="project__img"
                     src={item.src}

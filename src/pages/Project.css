@@ -13,8 +13,9 @@
   .project_list {
     flex-direction: column !important;
   }
-  .project_list .project__img:hover {
-    width: 410px;
+  .overlay .project__img:hover {
+    width: 390px;
+    height: 220px;
     transition: 0.3s;
     cursor: pointer;
   }
