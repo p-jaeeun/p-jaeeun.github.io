@@ -27,9 +27,13 @@ const FooterWrapper = styled.footer`
   position: fixed;
   overflow: hidden;
   bottom: 0;
-  border-top: ${(props) => (props.isHome ? null : "solid 1px #f3f3f3")};
   background-color: ${(props) => (props.isHome ? "transparent" : "#fff")};
+
+  @media (max-width: 768px) {
+    border-top: ${(props) => (props.isHome ? null : "solid 1px #f3f3f3")};
+  }
 `;
+
 const FooterText = styled.div`
   width: 100%;
   height: 40px;

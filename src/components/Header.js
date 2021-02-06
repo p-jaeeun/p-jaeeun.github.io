@@ -65,8 +65,10 @@ const HeaderWrapper = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: ${(props) => (props.isHome ? null : "solid 1px #f3f3f3")};
   background-color: ${(props) => (props.isHome ? "transparent" : "#fff")};
+  @media (max-width: 768px) {
+    border-bottom: ${(props) => (props.isHome ? null : "solid 1px #f3f3f3")};
+  }
 `;
 
 const Logo = styled(Link)`
@@ -80,6 +82,7 @@ const Logo = styled(Link)`
     color: #000;
     transition: 0.2s;
   }
+
   @media all and (min-width: 1000px) and (max-width: 1330px) {
     padding-left: 50px;
   }
@@ -98,6 +101,7 @@ const Logo = styled(Link)`
 const Nav = styled.nav`
   list-style: none;
   margin-right: 10rem;
+
   @media all and (min-width: 1000px) and (max-width: 1330px) {
     margin-right: 9rem;
   }
