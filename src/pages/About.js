@@ -45,11 +45,11 @@ class About extends Component {
                   <li>
                     <img src="/images/javascript.png" alt="javascript" />
 
-                    <p>VanillaJS, ES5와 ES6 문법의 이해</p>
+                    <p>ES5와 ES6 문법의 이해, class 활용</p>
                   </li>
                   <li>
                     <img src="/images/html.png" alt="html" />
-                    <p>html5 웹표준 이해, 의미있는 마크업</p>
+                    <p>HTML5 웹표준 이해, 의미 있는 마크업</p>
                   </li>
                   <li>
                     <img src="/images/css.png" alt="css" />
@@ -57,7 +57,7 @@ class About extends Component {
                   </li>
                   <li>
                     <img src="/images/react.png" alt="react" />
-                    <p>컴포넌트의 이해와 SPA 구현 가능</p>
+                    <p>component의 이해와 props, state 활용</p>
                   </li>
                 </ul>
               </div>
@@ -73,7 +73,7 @@ class About extends Component {
                 <ul>
                   <li>
                     <img src="/images/github.png" alt="github" />
-                    <p>git을 이용한 형상 관리</p>
+                    <p>git을 이용한 형상 관리 협업 경험</p>
                   </li>
                 </ul>
               </div>
