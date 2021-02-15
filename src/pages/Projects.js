@@ -34,10 +34,11 @@ class Projects extends Component {
           id: 2,
           name: "BlackGreen",
           desc: "친환경 패션 브랜드를 소비자들에게 소개하는 서비스",
-          role: "기획, 디자인, axios 활용한 웹서버 통신 , 브랜드 페이지 구현",
+          role:
+            "기획, 디자인, axios 활용한 웹서버 통신 , 홈 & 브랜드 페이지 구현",
           number: "3명",
           stack: "React.js,Node.js,HTML,CSS,Spring boot",
-          git: "https://github.com/p-jaeeun/WTM_hackathon",
+          git: "https://github.com/88jina/WTM_hackathon",
           src: "/images/project3.png",
         },
       ],
