@@ -27,7 +27,11 @@ const Modal = (props) => {
                 <span className="content-subtitle">스택</span> {stack}
               </p>
               <p>
-                <a href={git} className="content-subtitle gitlink">
+                <a
+                  href={git}
+                  target="_blanck"
+                  className="content-subtitle gitlink"
+                >
                   ▶︎▶︎ Go to Github <i class="fab fa-github "></i>
                 </a>
               </p>
